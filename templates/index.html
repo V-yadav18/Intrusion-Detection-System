@@ -1,0 +1,95 @@
+{% extends "material/base.html" %}
+{% block content %}
+<div class="showcase container blue lighten-3">
+    <div class="row">
+        <div class="col 14 m10 offset-ml center">
+            <h2>intrusion detection  </h2>
+            
+            
+        </div>
+
+    </div>
+</div>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+		 <span>{{ message }}</span>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<section class="section section-signup">
+        <div class="container">
+          <div class="row">
+            <h5>Login</h5>
+            <div class="col s12 m4">
+              <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-0">
+                <form action="{{ url_for('login')}}" method="POST">
+                  
+               
+                    
+                  <div class="input-field">
+                   <p class="range-field">
+                        <input type="text" id="age" name="id" > 
+                    <label for="">User Name</label>
+                  </div>
+                   <div class="input-field">
+                   <p class="range-field">
+                        <input type="password" id="age" name="pass" > 
+                    <label for="">Password</label>
+                  </div>
+                 
+				 
+			
+
+                  <input type="submit" value="Login" class="form-control">
+           
+                </form>
+              </div>
+            </div>
+            
+          
+    
+            
+    
+             
+				   
+                   
+				  
+				  
+				
+			    </div>
+				
+              
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      {% endblock%}
+
+      {% block scripts %}
+      {{super()}}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+      <!-- <script type="text/javascript">
+           document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('select');
+          var instances = M.FormSelect.init(elems, options);
+        });
+      </script> -->
+      
+      <script>
+          // Or with jQuery
+      
+        $(document).ready(function(){
+          $('select').formSelect();
+        });
+      </script>
+      
+      {% endblock %}

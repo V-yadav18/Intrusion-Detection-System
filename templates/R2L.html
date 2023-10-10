@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>intrusion detection</title>
+<!--
+
+Template 2098 Health
+
+http://www.tooplate.com/view/2098-health
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+
+     <link rel="stylesheet" href="{{url_for('static',filename='css/tooplate-style.css')}}">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section>
+
+                    <ul   list-style-type="none";  
+                    margin="0";  
+                    padding="0px";  
+                    overflow="hidden";  
+                    background-color="#333"  >
+                    <a href="{{ url_for('main') }}" class="section-btn btn btn-default smoothScroll">DOs</a>
+                    <a href="{{ url_for('Probe') }}" class="section-btn btn btn-default smoothScroll">Probe</a>
+                    <a href="{{ url_for('R2L') }}" class="section-btn btn btn-default smoothScroll">R2L</a>
+                    <a href="{{ url_for('U2R') }}" class="section-btn btn btn-default smoothScroll">U2R</a>
+
+
+           
+                    </ul>
+     </section>
+
+
+      <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                         <div class="owl-carousel owl-theme">
+                              <div class="item item-first">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h1>intrusion detection</h1>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-second">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h1>intrusion detection</h1>
+                                             <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-third">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h1>intrusion detection</h1>
+                                             <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+     <!-- MAKE AN APPOINTMENT -->
+     <section id="appointment" data-stellar-background-ratio="3">
+
+
+          <div class="container">
+               <div class="row">
+                   <div class="col-md-6 col-sm-6">
+                    </div>
+          <div class="col-md-6 col-sm-6">
+               <!-- CONTACT FORM HERE -->
+               <form id="appointment-form" role="form" method="post" action="{{ url_for('analyze2')}}">
+
+                    <!-- SECTION TITLE -->
+                    <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                         <h2>Features for R2L</h2>
+                    </div>
+
+                    <div class="wow fadeInUp" data-wow-delay="0.8s">
+                           
+                                 
+                         <div class="col-md-12 col-sm-12">
+                              <label>src_bytes</label>
+                              <input class="form-control" placeholder="Enter src_bytes" name="src_bytes" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>dst_bytes</label>
+                              <input class="form-control" placeholder="Enter dst_bytes" name="dst_bytes" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>hot</label>
+                              <input class="form-control" placeholder="Enter hot" name="hot" type="text">
+                          </div>
+
+                         
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>num_failed_logins</label>
+                              <input class="form-control" placeholder="Enter num_failed_logins" name="num_failed_logins" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>is_guest_login</label>
+                              <input class="form-control" placeholder="Enter is_guest_login" name="is_guest_login" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>dst_host_srv_count</label>
+                              <input class="form-control" placeholder="Enter dst_host_srv_count" name="dst_host_srv_count" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>dst_host_same_src_port_rate</label>
+                              <input class="form-control" placeholder="Enter dst_host_same_src_port_rate" name="dst_host_same_src_port_rate" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>dst_host_srv_diff_host_rate</label>
+                              <input class="form-control" placeholder="Enter dst_host_srv_diff_host_rate" name="dst_host_srv_diff_host_rate" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>service_ftp</label>
+                              <input class="form-control" placeholder="Enter service_ftp" name="service_ftp" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>service_ftp_data</label>
+                              <input class="form-control" placeholder="Enter service_ftp_data" name="service_ftp_data" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>service_http</label>
+                              <input class="form-control" placeholder="Enter service_http" name="service_http" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>service_imap4</label>
+                              <input class="form-control" placeholder="Enter service_imap4" name="service_imap4" type="text">
+                          </div>
+
+                          <div class="col-md-12 col-sm-12">
+                              <label>flag_RSTO</label>
+                              <input class="form-control" placeholder="Enter flag_RSTO" name="flag_RSTO" type="text">
+                          </div>
+                                
+                              <button type="submit" class="form-control" id="cf-submit" name="submit">Submit </button>
+                        
+                    </div>
+              </form>
+          </div>
+     </div>
+</div>
+
+
+					
+					
+					
+
+               </div>
+			     
+          </div>
+     </section>
+
+
+
+
+     <!-- SCRIPTS -->
+     <script src="{{url_for('static',filename='js/jquery.js')}}"></script>
+     <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/jquery.sticky.js')}}"></script>
+     <script src="{{url_for('static',filename='js/jquery.stellar.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/wow.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/smoothscroll.js')}}"></script>
+     <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+     <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+</body>
+</html>
