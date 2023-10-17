@@ -20,10 +20,9 @@ This project aims to build an Intrusion Detection System (IDS) using a feature s
 
 1. Clone the repository:
    
-   git clone https://github.com/your-username/intrusion-detection-project.git
-   cd intrusion-detection-project
-   
+   git clone https://github.com/your-username/intrusion-detection-project.
 
+   
 2. Install dependencies:
    
    pip install -r requirements.txt
