@@ -14,7 +14,6 @@ This project aims to build an Intrusion Detection System (IDS) using a feature s
 - [User Interface](#user-interface)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
